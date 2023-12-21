@@ -1,0 +1,63 @@
+/*Theme*/
+:root {
+    --accent-color: #729fcf;
+    --color: #92c2f5;
+    --minor-color: gray;
+}
+
+.background {
+
+    background-color: var(--accent-color);
+}
+
+.invert-color {
+    color: white;
+}
+
+.minor-color {
+    color: var(--minor-color);
+}
+
+.foreground {
+    color: var(--accent-color);
+}
+
+/* .star {
+    --star-color: orange;
+}
+
+.star-empty {
+    --star-empty-color: var(--color);
+} */
+
+.star {
+    color: orange;
+}
+
+.stars-1 .star-2 {
+    color: var(--color);
+}
+
+.stars-1 .star-3 {
+    color: var(--color);
+}
+
+.stars-1 .star-4 {
+    color: var(--color);
+}
+
+.stars-1 .star-5 {
+    color: var(--color);
+}
+
+.stars-2 .star-3 {
+    color: var(--color);
+}
+
+.stars-2 .star-4 {
+    color: var(--color);
+}
+
+.stars-2 .star-5 {
+    color: var(--color);
+}

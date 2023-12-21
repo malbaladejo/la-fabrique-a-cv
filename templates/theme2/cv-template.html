@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <link href="cv-2023.css" rel="stylesheet">
+    <link href="cv-2023-blue.css" rel="stylesheet">
+</head>
+
+<body class="blue-theme">
+    <div class="cv-header background-light invert-color">
+        <div class="picture">
+            <img src="{{picture}}" />
+        </div>
+        <div>
+            <div class="cv-name">{{name}}</div>
+            <div class="cv-title">{{title}}</div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="right-panel background-dark invert-color">
+
+            <div class="contacts margin">
+                <div class="bold">Coordonnées :</div>
+                {{#each contacts}}
+                <div class="contact">
+                    <div class="bold">{{title}} :</div>
+                    {{value}}
+                </div>
+                {{/each}}
+            </div>
+
+            <div class="skills margin">
+                <div class="bold">Compétences :</div>
+                {{#each skills}}
+                <div class="skill">
+                    <div class="skill-header">
+                        <div>
+                            {{title}}
+                        </div>
+                        <div class="skill-years">
+                            {{years}} ans
+                        </div>
+                    </div>
+
+                    {{#if five}}
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    {{/if}}
+
+                    {{#if four}}
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star-empty"></div>
+                    </div>
+                    {{/if}}
+
+                    {{#if three}}
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star-empty"></div>
+                        <div class="star-empty"></div>
+                    </div>
+                    {{/if}}
+
+                    {{#if two}}
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star-empty"></div>
+                        <div class="star-empty"></div>
+                        <div class="star-empty"></div>
+                    </div>
+                    {{/if}}
+
+                    {{#if one}}
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star-empty"></div>
+                        <div class="star-empty"></div>
+                        <div class="star-empty"></div>
+                        <div class="star-empty"></div>
+                    </div>
+                    {{/if}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+
+        <div class="body">
+
+
+            <div class="experiences">
+                <div class="experience-title background-light invert-color font-size-22">
+                    EXPÉRIENCES PROFESSIONNELLES
+                </div>
+                {{#each experiences}}
+                <div class="experience-grid">
+                    <div class="exprience-right minor-color">
+                        <p>
+                            {{from}}
+                        </p>
+                        <p>
+                            {{to}}
+                        </p>
+                        <p>
+                            {{skills}}
+                        </p>
+                    </div>
+                    <div>
+                        <div class="margin bold font-size-22">{{title}}</div>
+
+                        <div>
+                            <ul>
+                                {{#each descriptions}}
+                                <li>{{title}}
+                                    {{#if labels}}
+                                    <ul>
+                                        {{#each labels}}
+                                        <li>{{.}}</li>
+                                        {{/each}}
+                                    </ul>
+                                    {{/if}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                {{/each}}
+
+                <div class="experience-title background-light invert-color font-size-22">
+                    FORMATIONS
+                </div>
+                {{#each studies}}
+                <div class="experience-grid">
+                    <div class="exprience-right minor-color">
+                        {{years}}
+                    </div>
+                    <div>{{label}}</div>
+                </div>
+                {{/each}}
+
+                <div class="experience-title background-light invert-color font-size-22">
+                    LANGUES
+                </div>
+                {{#each languages}}
+                <div class="experience-grid">
+                    <div class="exprience-right minor-color">
+                        {{title}}
+                    </div>
+                    <div>{{label}}</div>
+                </div>
+                {{/each}}
+                <div class="experience-title background-light invert-color font-size-22">
+                    LOISIRS
+                </div>
+                <div class="hobbies">{{hobbies}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

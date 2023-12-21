@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    font-family: Calibri;
+}
+
+/* Generic*/
+ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.margin {
+    margin-bottom: 20px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width: 1024px;
+}
+
+.right-panel {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.contacts {
+    margin-top: 180px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+
+}
+
+.skill-years {
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.stars {
+    width: 120px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.contact {
+    margin-bottom: 20px;
+}
+
+
+.body {
+    padding: 10px;
+}
+
+.cv-header {
+    width: 800px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 8px solid white;
+    position: absolute;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+}
+
+.cv-name {
+    font-size: 36px;
+    text-align: center;
+}
+
+.cv-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.picture img {
+    border-radius: 50%;
+    display: block;
+    width: 95px;
+    margin: auto;
+    border: 4px solid white;
+}
+
+.experiences {
+    margin-top: 180px;
+}
+
+.experiences hr {
+    margin: 20px 10px;
+}
+
+.experience-title {
+    padding: 5px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    row-gap: 30px;
+    margin: 10px;
+}
+
+.exprience-right p {
+    margin-bottom: 10px;
+}
+
+.hobbies {
+    margin: 10px;
+}

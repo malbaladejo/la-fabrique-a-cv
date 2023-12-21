@@ -1,0 +1,36 @@
+/*Theme*/
+:root {
+    --dark-color: #282831;
+    --light-color: #138F9E;
+    --minor-color: gray;
+}
+
+.background-dark {
+
+    background-color: var(--dark-color);
+}
+
+.background-light {
+
+    background-color: var(--light-color);
+}
+
+.invert-color {
+    color: white;
+}
+
+.minor-color {
+    color: var(--minor-color);
+}
+
+.foreground {
+    color: var(--dark-color);
+}
+
+.star {
+    --star-color: orange;
+}
+
+.star-empty {
+    --star-empty-color: var(--light-color);
+}

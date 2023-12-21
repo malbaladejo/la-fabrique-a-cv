@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <link href="cv-2023.css" rel="stylesheet">
+    <link href="cv-2023-blue.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body class="blue-theme">
+    <div class="layout">
+        <div class="right-panel background invert-color">
+            <div class="picture">
+                <img src="{{picture}}" />
+            </div>
+
+            <div class="contacts margin">
+                <div class="bold">Coordonnées :</div>
+                {{#each contacts}}
+                <div class="contact">
+                    <div class="contact-title">
+                        {{#phone}}
+                        <i class="fas fa-phone"></i>
+                        {{/phone}}
+                        {{#email}}
+                        <i class="fas fa-envelope"></i>
+                        {{/email}}
+                        {{#home}}
+                        <i class="fas fa-home"></i>
+                        {{/home}}
+                        <div class="bold">{{title}} :</div>
+                    </div>
+                    {{value}}
+                </div>
+                {{/each}}
+            </div>
+
+            <div class="skills margin">
+                <div class="bold">Compétences :</div>
+                {{#each skills}}
+                <div class="skill">
+                    <div class="skill-header">
+                        <div>
+                            {{title}}
+                        </div>
+                        <!-- <div class="skill-years">
+                            {{years}} ans
+                        </div> -->
+
+                        <div class="stars stars-{{value}}">
+                            <i class="fas fa-star star star-1"></i>
+                            <i class="fas fa-star star star-2"></i>
+                            <i class="fas fa-star star star-3"></i>
+                            <i class="fas fa-star star star-4"></i>
+                            <i class="fas fa-star star star-5"></i>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="cv-title">
+                <div class="foreground">{{name}}</div>
+                <div class="foreground">{{title}}</div>
+            </div>
+            <div class="experiences">
+                <div class="experience-title background invert-color font-size-22">
+                    EXPÉRIENCES PROFESSIONNELLES
+                </div>
+                {{#each experiences}}
+                <div class="experience-grid">
+                    <div class="exprience-right minor-color">
+                        <p>
+                            {{from}}
+                        </p>
+                        <p>
+                            {{to}}
+                        </p>
+                        <p>
+                            {{skills}}
+                        </p>
+                    </div>
+                    <div>
+                        <div class="margin bold font-size-22">{{title}}</div>
+
+                        <div>
+                            <ul>
+                                {{#each descriptions}}
+                                <li>{{title}}
+                                    {{#if labels}}
+                                    <ul>
+                                        {{#each labels}}
+                                        <li>{{.}}</li>
+                                        {{/each}}
+                                    </ul>
+                                    {{/if}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                {{/each}}
+
+                <div class="experience-title background invert-color font-size-22">
+                    FORMATIONS
+                </div>
+                {{#each studies}}
+                <div class="experience-grid">
+                    <div class="exprience-right minor-color">
+                        {{years}}
+                    </div>
+                    <div>{{label}}</div>
+                </div>
+                {{/each}}
+
+                <div class="experience-title background invert-color font-size-22">
+                    LANGUES
+                </div>
+                {{#each languages}}
+                <div class="experience-grid">
+                    <div class="exprience-right minor-color">
+                        {{title}}
+                    </div>
+                    <div>{{label}}</div>
+                </div>
+                {{/each}}
+                <div class="experience-title background invert-color font-size-22">
+                    LOISIRS
+                </div>
+                <div class="hobbies">{{hobbies}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
