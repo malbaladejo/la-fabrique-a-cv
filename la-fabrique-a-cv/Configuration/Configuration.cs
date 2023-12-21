@@ -7,4 +7,5 @@ internal class Configuration
 	public string? Output { get; set; }
 	public List<string> CssFiles { get; } = new List<string>();
 	public List<string> Assets { get; } = new List<string>();
+
 }
