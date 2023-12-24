@@ -15,35 +15,48 @@ internal class ConfigurationLoader : IConfigurationLoader
 		this.logger.LogInformation("Reading configuration");
 
 		var configuration = new Configuration();
-		for (int i = 0; i < args.Length; i = i + 2)
+		var i = 0;
+		while (i < args.Length)
 		{
 			if (args[i] == ConfigurationFields.Template)
 			{
 				configuration.Template = args[i + 1];
+				i = i + 2;
 				continue;
 			}
 
 			if (args[i] == ConfigurationFields.Data)
 			{
 				configuration.Data = args[i + 1];
+				i = i + 2;
 				continue;
 			}
 
 			if (args[i] == ConfigurationFields.Output)
 			{
 				configuration.Output = args[i + 1];
+				i = i + 2;
 				continue;
 			}
 
 			if (args[i] == ConfigurationFields.Css)
 			{
 				configuration.CssFiles.Add(args[i + 1]);
+				i = i + 2;
 				continue;
 			}
 
 			if (args[i] == ConfigurationFields.Asset)
 			{
 				configuration.Assets.Add(args[i + 1]);
+				i = i + 2;
+				continue;
+			}
+
+			if (args[i] == ConfigurationFields.Watch)
+			{
+				configuration.WatchFiles = true;
+				i = i + 1;
 				continue;
 			}
 

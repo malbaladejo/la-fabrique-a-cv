@@ -1,16 +1,35 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using la_fabrique_a_cv;
+using Microsoft.Extensions.Logging;
 
-internal class ConfigurationChecker
+internal class ConfigurationChecker : IWorkflowStep
 {
     private readonly ILogger<ConfigurationChecker> logger;
+    private readonly IDocumentationWritter documentationWritter;
+    private bool isEnabled = true;
 
-    public ConfigurationChecker(ILogger<ConfigurationChecker> logger)
+    public ConfigurationChecker(ILogger<ConfigurationChecker> logger, IDocumentationWritter documentationWritter)
     {
         this.logger = logger;
+        this.documentationWritter = documentationWritter;
     }
 
-    public bool Check(Configuration configuration)
+    public bool Execute(Configuration configuration)
     {
+        if (!this.isEnabled)
+            return true;
+
+        this.isEnabled = false;
+
+        if (this.Check(configuration))
+            return true;
+
+        this.documentationWritter.Write();
+        return false;
+    }
+
+    private bool Check(Configuration configuration)
+    {
+
         logger.LogInformation("Checking configuration");
 
         if (configuration == null)

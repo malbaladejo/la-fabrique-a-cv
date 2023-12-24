@@ -7,4 +7,5 @@ internal static class ConfigurationFields
 	public static readonly string Output = "-output";
 	public static readonly string Css = "-css";
 	public static readonly string Asset = "-asset";
+	public static readonly string Watch = "-watch";
 }

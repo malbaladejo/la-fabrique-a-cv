@@ -1,0 +1,264 @@
+{
+    "name": "Olga Laporte",
+    "title": "Developpeuse sénior .Net et Angular",
+    "picture": "picture.jpg",
+    "contacts": [
+        {
+            "title": "Téléphone",
+            "value": "+33 6 01 01 15 45",
+            "phone": true
+        },
+        {
+            "title": "E-mail",
+            "value": "olga-laporte@gmail.com",
+            "email": true
+        },
+        {
+            "title": "Adresse",
+            "value": "France",
+            "home": true
+        }
+    ],
+    "skills": [
+        {
+            "title": ".Net / C#",
+            "value": 5,
+            "years": 20
+        },
+        {
+            "title": "Visual Studio",
+            "value": 5,
+            "years": 20
+        },
+        {
+            "title": "WPF",
+            "value": 5,
+            "years": 12
+        },
+        {
+            "title": "PRISM",
+            "value": 4,
+            "years": 10
+        },
+        {
+            "title": "SOLID",
+            "value": 4,
+            "years": 8
+        },
+        {
+            "title": "Angular",
+            "value": 4,
+            "years": 5
+        },
+        {
+            "title": "TypeScript",
+            "value": 4,
+            "years": 7
+        },
+        {
+            "title": "Git",
+            "value": 4,
+            "years": 8
+        },
+        {
+            "title": "Azure DevOps",
+            "value": 2,
+            "years": 3
+        }
+    ],
+    "experiences": [
+        {
+            "title": "Développeuse .Net Sénior – Paris software – Paris",
+            "from": "Octobre 2013",
+            "to": "Aujourd’hui",
+            "skills": "C#, WPF, Prism, Solid, Visual Studio, Angular, TypeScript, Azure DevOps, Jenkins, Git",
+            "descriptions": [
+                {
+                    "title": "Application WPF de type CRM dans le domaine bancaire :",
+                    "labels": [
+                        "Application Modulaire basée sur Prism.",
+                        "Utilisation des contrôles DevExpress et Telerik.",
+                        "Consommation de services SOAP et REST.",
+                        "Injection de dépendances avec Unity.",
+                        "Utilisation des Designs Pattern Factory et Strategy.",
+                        "Respect des principes SOLID, KISS, DRY.",
+                        "Application personnalisable en fonction des besoins des partenaires.",
+                        "Application sensible pour l’activité de la banque.",
+                        "Code review systématique.",
+                        "50% de couverture de test minimum exigé.",
+                        "Gestion des build en intégration continue sur Azure Devops."
+                    ]
+                },
+                {
+                    "title": "Application Angular Micro Frontend",
+                    "labels": [
+                        "Création de widgets autonomes.",
+                        "Communication entre des applications Angular et WPF en utilisant SocketIO."
+                    ]
+                },
+                {
+                    "title": "Participation au processus de recrutement."
+                },
+                {
+                    "title": "Accompagnement des nouvelles recrues."
+                },
+                {
+                    "title": "Migration d'un application AngularJs en Angular."
+                },
+                {
+                    "title": "Animation d'une communauté .Net :",
+                    "labels": [
+                        "Organisation de sessions de formation.",
+                        "Pair Programming."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Leader Technique .Net – CrossSkills – Sophia Antipolis",
+            "from": "Février 2012",
+            "to": "Octobre 2013",
+            "skills": "C#, Asp.Net, WCF, Visual Studio, Sql Server, HTML, CSS",
+            "descriptions": [
+                {
+                    "title": "Garantir la qualité du code",
+                    "labels": [
+                        "Peer Programing.",
+                        "Relecture de code.",
+                        "Animation de sessions de formation.",
+                        "Veille technologique.",
+                        "Automatisation de l’exécution des tests unitaires .Net et Javascript."
+                    ]
+                },
+                {
+                    "title": "Développement",
+                    "labels": [
+                        "Maintenance et évolutions sur des applications Asp.net.",
+                        "Développement d’une application HTML 5/Typescript fonctionnant sur PC et tablette.",
+                        "Intégration d’un service tiers de conversion de vidéo."
+                    ]
+                },
+                {
+                    "title": "Architecture",
+                    "labels": [
+                        "Architecture de l’application HTML 5 pour iPad.",
+                        "Choix de l’utilisation d’un framework MVVM en Javascript (knockoutJS).",
+                        "Choix des outils permettant de créer et d’automatiser le lancement des tests unitaires Javascript (Qunit, PhantomJs).",
+                        "Optimisation du processus d’intégration continue utilisant CruiseControl.net (déploiement automatique à la fin du build, gestion des versions des scripts sql).",
+                        "Présentation des choix techniques à l’ensemble de développeurs.",
+                        "Formation de l’équipe."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Leader Technique .Net – RAD Technologies – Sophia Antipolis",
+            "from": "Mars 2007 ",
+            "to": "Janvier 2012",
+            "skills": "C#, Asp.Net, WCF, Visual Studio, Sql Server, HTML, CSS, Silverlight, Telerik, Unity, MVVM Light, LinqToSql",
+            "descriptions": [
+                {
+                    "title": "Garant de la qualité du code et du respect de l'architecture",
+                    "labels": [
+                        "Communiquer les problèmes rencontrés dans le cadre du développement.",
+                        "Accompagner les autres développeurs.",
+                        "Architecture et veille technologique.",
+                        "Gestion des processus de build.",
+                        "Amélioration des processus de livraison.",
+                        "Mise en place de processus d'intégration continue."
+                    ]
+                },
+                {
+                    "title": "Développement",
+                    "labels": [
+                        "Application Asp.net permettant de consulter un catalogue produit, les documents techniques de ces produits (manuels d’utilisation, schémas électriques, vues éclatées) et commander des pièces détachées.",
+                        "Application Web est basée en partie sur Silverlight.",
+                        "Wizard permettant la saisie d'une demande de garantie.",
+                        "Client lourd WPF consommant des services WCF.",
+                        "Le client WPF respecte le pattern MVVM. ",
+                        "Injection de dépendance avec Unity.",
+                        "Création d’un système ETLP pour intégrer le référentiel des clients.",
+                        "Mise en place de tests unitaires automatisés sur les services WCF."
+                    ]
+                },
+                {
+                    "title": "Architecture",
+                    "labels": [
+                        "Choix de Silverlight. ",
+                        "Sessions de formation pour présenter Silverlight et les bonnes pratiques de développement dans cette technologie. ",
+                        "Mise en place d’un script MsBuild permettant de compiler les applications, lancer les tests unitaires et déployer les applications sur nos serveurs de tests."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Développeuse Web – TravelDev – Aix en Provence",
+            "from": "Janvier 2002",
+            "to": "Mai 2007",
+            "skills": "Visual Studio, InterDev, Asp, Asp.Net, VBScript, C#, Sql server, IIS 6.0, HTML, Javascript, Photoshop",
+            "descriptions": [
+                {
+                    "title": "Définition d'architecture."
+                },
+                {
+                    "title": "Développement et maintenance des applications."
+                },
+                {
+                    "title": "Conseil et assistance aux utilisateurs."
+                },
+                {
+                    "title": "Administration réseau."
+                },
+                {
+                    "title": "Veille technologique."
+                },
+                {
+                    "title": "Développement",
+                    "labels": [
+                        "Gestion et développement des sites marchands.",
+                        "Développement d’outils d’aide à la vente à l’attention du service “call center” en charge des ventes à distance.",
+                        "Développement d’outils pour la gestion des stocks et le suivi des réservations à l’attention du service “back office”.",
+                        "Développement d’interfaces d’échange avec les différents partenaires professionnels du tourisme : export de fichiers XML contenant les tarifs et disponibilités ; intégration de WebServices fournisseurs pour mettre à jour les stocks en temps réels."
+                    ]
+                },
+                {
+                    "title": "Architecture",
+                    "labels": [
+                        "Création d’une centrale d’achat afin de gérer les stocks.",
+                        "Création d’une solution support de vente à l’attention des commerciaux en charge du portefeuille des réservations « groupe » (grandes écoles, comités d’entreprise etc.).",
+                        "Conception d’un outil de comptabilité interne permettant de regrouper différentes informations (ventes fournisseurs, ventes clients, suivi des paiements)."
+                    ]
+                }
+            ]
+        }
+    ],
+    "studies": [
+        {
+            "years": "2002",
+            "label": "ISEN :Diplôme Ingénieur en Informatique - Master’s Degree, Toulon, France"
+        },
+        {
+            "years": "1999-2002",
+            "label": "ISEN Institut Supérieur d'Électronique et du Numérique - Cycle Ingénieur, Toulon, France"
+        },
+        {
+            "years": "1996-1999",
+            "label": "ISEN Institut Supérieur d'Électronique et du Numérique – Prépa, Toulon, France "
+        },
+        {
+            "years": "1996",
+            "label": "Baccalauréat Scientifique - Mention Bien"
+        }
+    ],
+    "languages": [ 
+        {
+            "title": "Français",
+            "label": "Langue maternelle"
+        }, 
+        {
+            "title": "Anglais",
+            "label": "Relativement à l'aise a l'écrit, oral plus difficile"
+        }
+    ],
+    "hobbies": "Boulangerie, littérature SF, ski, randonnée, dessin"
+}

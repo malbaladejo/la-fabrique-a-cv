@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using la_fabrique_a_cv;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-internal class NustasheDocumentRenderer : IDocumentRenderer
+internal class NustasheDocumentRenderer : IWorkflowStep
 {
 	private readonly ILogger<NustasheDocumentRenderer> logger;
 	private readonly ITemplateBuidler templateBuidler;
@@ -13,7 +14,7 @@ internal class NustasheDocumentRenderer : IDocumentRenderer
 		this.templateBuidler = templateBuidler;
 	}
 
-	public void Render(Configuration configuration)
+	public bool Execute(Configuration configuration)
 	{
 		try
 		{
@@ -31,10 +32,12 @@ internal class NustasheDocumentRenderer : IDocumentRenderer
 
 			logger.LogInformation("Writting output");
 			File.WriteAllText(configuration.Output, output);
+			return true;
 		}
 		catch (Exception ex)
 		{
 			logger.LogInformation($"Error: {ex}");
+			return false;
 		}
 	}
 }

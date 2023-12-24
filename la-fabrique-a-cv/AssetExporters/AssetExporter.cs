@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using la_fabrique_a_cv;
+using Microsoft.Extensions.Logging;
 
-internal class AssetExporter
+internal class AssetExporter : IWorkflowStep
 {
 	private readonly ILogger<AssetExporter> logger;
 
@@ -9,7 +10,7 @@ internal class AssetExporter
 		this.logger = logger;
 	}
 
-	public void Export(Configuration configuration)
+	public bool Execute(Configuration configuration)
 	{
 		this.logger.LogInformation("Exporting Css files");
 		foreach (var item in configuration.CssFiles)
@@ -18,6 +19,8 @@ internal class AssetExporter
 		this.logger.LogInformation("Exporting Asset files");
 		foreach (var item in configuration.Assets)
 			this.ExportFile(configuration, item);
+
+		return true;
 	}
 
 	private void ExportFile(Configuration configuration, string filePath)
