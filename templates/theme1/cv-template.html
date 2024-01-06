@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en"> 
- 
-<head> 
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <title>CV</title>
     <!-- css -->
@@ -27,14 +27,32 @@
                         {{#email}}
                         <i class="fas fa-envelope"></i>
                         {{/email}}
-                        {{#home}}
-                        <i class="fas fa-home"></i>
-                        {{/home}}
                         <div class="bold">{{title}} :</div>
                     </div>
                     {{value}}
                 </div>
                 {{/each}}
+                <div class="contact">
+                    <div class="contact-title">
+                        <i class="fas fa-home"></i>
+                        <div class="bold">Adresse :</div>
+                    </div>
+                    {{#each address}}
+                    <p>
+                        {{.}}
+                    </p>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="margin">
+                <div class="bold">Nationalité :</div>
+                {{nationality}}
+            </div>
+
+            <div class="margin">
+                <div class="bold">Date de naissance :</div>
+                {{birthDate}}
             </div>
 
             <div class="skills margin">

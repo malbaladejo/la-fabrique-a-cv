@@ -6,6 +6,9 @@
     <RootNamespace>la_fabrique_a_cv</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>La fabrique a CV</Title>
+    <Authors>malbaladejo</Authors>
+    <Copyright>2024</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,5 +1,7 @@
 {
     "name": "Olga Laporte",
+    "birthDate": "05/07/1983",
+    "nationality": "française",
     "title": "Developpeuse sénior .Net et Angular",
     "picture": "picture.jpg",
     "contacts": [
@@ -12,12 +14,12 @@
             "title": "E-mail",
             "value": "olga-laporte@gmail.com",
             "email": true
-        },
-        {
-            "title": "Adresse",
-            "value": "France",
-            "home": true
         }
+    ],
+    "address": [
+        "23 rue du général Leclerc",
+        "83001 Toulon",
+        "France"
     ],
     "skills": [
         {
@@ -250,11 +252,11 @@
             "label": "Baccalauréat Scientifique - Mention Bien"
         }
     ],
-    "languages": [ 
+    "languages": [
         {
             "title": "Français",
             "label": "Langue maternelle"
-        }, 
+        },
         {
             "title": "Anglais",
             "label": "Relativement à l'aise a l'écrit, oral plus difficile"

@@ -17,10 +17,21 @@ namespace la_fabrique_a_cv
 		{
 			this.logger.LogInformation("Start watching");
 			var files = GetFilesToWatch(configuration);
-			var directories = files.Select(f => Path.GetDirectoryName(f)).Distinct();
+			var directories = files.Select(f => Path.GetDirectoryName(f)).Distinct().ToArray();
+			this.LogNumberOfDirectoriesToWatch(directories);
 
 			foreach (var directory in directories)
 				RegisterFile(directory, configuration, steps);
+		}
+
+		private void LogNumberOfDirectoriesToWatch(string[] directories)
+		{
+			if (directories.Length == 0)
+				this.logger.LogInformation($"No directory to watch");
+			else if (directories.Length == 1)
+				this.logger.LogInformation($"1 directory to watch");
+			else
+				this.logger.LogInformation($"{directories.Length} directories to watch");
 		}
 
 		private IEnumerable<string> GetFilesToWatch(Configuration configuration)

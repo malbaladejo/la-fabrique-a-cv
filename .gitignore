@@ -398,4 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 output/*
+*/dist/*
 **/launchSettings.json
