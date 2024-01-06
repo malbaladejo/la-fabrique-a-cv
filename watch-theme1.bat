@@ -1,1 +1,1 @@
-la-fabrique-a-cv\bin\Release\net6.0\publish\la-fabrique-a-cv.exe -watch -template templates\theme1\cv-template.html -data templates\data.json -output output\theme1\index.html -css templates\theme1\cv-2023.css  -css templates\theme1\cv-2023-blue.css -asset templates\picture.jpg
+la-fabrique-a-cv\bin\Release\net6.0\publish\la-fabrique-a-cv.exe -watch -template templates\theme1\cv-template.html -data templates\data.json -output output\theme1\index.html -css templates\theme1\cv-style.css  -css templates\theme1\cv-style-blue.css -asset templates\picture.jpg
