@@ -27,10 +27,10 @@
     color: var(--dark-color);
 }
 
-.star {
-    --star-color: orange;
+.progress-bar {
+    background-color: white;
 }
 
-.star-empty {
-    --star-empty-color: var(--light-color);
+.progress-bar-value {
+    background-color: var(--light-color);
 }

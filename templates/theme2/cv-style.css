@@ -27,7 +27,7 @@ li {
 
 .layout {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 240px 1fr;
     width: 1024px;
 }
 
@@ -56,11 +56,34 @@ li {
     font-size: 15px;
 }
 
-.stars {
-    width: 120px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.progress-bar {
+    width: 220px;
+    height: 5px;
+    margin-top: 5px;
+}
 
+.progress-bar-value {
+    height: 100%;
+}
+
+.progress-bar-value-1 {
+    width: 20%;
+}
+
+.progress-bar-value-2 {
+    width: 40%;
+}
+
+.progress-bar-value-3 {
+    width: 60%;
+}
+
+.progress-bar-value-4 {
+    width: 80%;
+}
+
+.progress-bar-value-5 {
+    width: 100%;
 }
 
 .contact {
@@ -73,7 +96,7 @@ li {
 }
 
 .cv-header {
-    width: 800px;
+    width: 966px;
     height: 100px;
     display: grid;
     grid-template-columns: auto 1fr;

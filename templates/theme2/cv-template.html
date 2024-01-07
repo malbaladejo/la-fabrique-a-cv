@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CV</title>
-    <link href="cv-2023.css" rel="stylesheet">
-    <link href="cv-2023-blue.css" rel="stylesheet">
+    <title>{{name}} - {{title}}</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 </head>
 
 <body class="blue-theme">
@@ -45,55 +46,9 @@
                         </div>
                     </div>
 
-                    {{#if five}}
-                    <div class="stars">
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-value progress-bar-value-{{value}}"></div>
                     </div>
-                    {{/if}}
-
-                    {{#if four}}
-                    <div class="stars">
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star-empty"></div>
-                    </div>
-                    {{/if}}
-
-                    {{#if three}}
-                    <div class="stars">
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star-empty"></div>
-                        <div class="star-empty"></div>
-                    </div>
-                    {{/if}}
-
-                    {{#if two}}
-                    <div class="stars">
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star-empty"></div>
-                        <div class="star-empty"></div>
-                        <div class="star-empty"></div>
-                    </div>
-                    {{/if}}
-
-                    {{#if one}}
-                    <div class="stars">
-                        <div class="star"></div>
-                        <div class="star-empty"></div>
-                        <div class="star-empty"></div>
-                        <div class="star-empty"></div>
-                        <div class="star-empty"></div>
-                    </div>
-                    {{/if}}
                 </div>
                 {{/each}}
             </div>
@@ -101,8 +56,6 @@
 
 
         <div class="body">
-
-
             <div class="experiences">
                 <div class="experience-title background-light invert-color font-size-22">
                     EXPÉRIENCES PROFESSIONNELLES
