@@ -23,10 +23,11 @@ namespace la_fabrique_a_cv
 
 			logger.LogInformation($"Ensuring output directory {outputDirectory}");
 
-			if (Directory.Exists(outputDirectory))
+			if (Directory.Exists(outputDirectory) && configuration.ClearOutput)
 				Directory.Delete(outputDirectory, true);
 
-			Directory.CreateDirectory(outputDirectory);
+			if (!Directory.Exists(outputDirectory))
+				Directory.CreateDirectory(outputDirectory);
 
 			return true;
 		}

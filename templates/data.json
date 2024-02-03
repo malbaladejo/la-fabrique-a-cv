@@ -70,7 +70,9 @@
     ],
     "experiences": [
         {
-            "title": "Développeuse .Net Sénior – Paris software – Paris",
+            "title": "Développeuse .Net Sénior",
+            "company": "Paris software",
+            "place": "Paris",
             "from": "Octobre 2013",
             "to": "Aujourd’hui",
             "skills": "C#, WPF, Prism, Solid, Visual Studio, Angular, TypeScript, Azure DevOps, Jenkins, Git",
@@ -117,7 +119,9 @@
             ]
         },
         {
-            "title": "Leader Technique .Net – CrossSkills – Sophia Antipolis",
+            "title": "Leader Technique .Net",
+            "company": "CrossSkills",
+            "place": "Sophia Antipolis",
             "from": "Février 2012",
             "to": "Octobre 2013",
             "skills": "C#, Asp.Net, WCF, Visual Studio, Sql Server, HTML, CSS",
@@ -155,6 +159,8 @@
         },
         {
             "title": "Leader Technique .Net – RAD Technologies – Sophia Antipolis",
+            "company": "RAD Technologies",
+            "place": "Sophia Antipolis",
             "from": "Mars 2007 ",
             "to": "Janvier 2012",
             "skills": "C#, Asp.Net, WCF, Visual Studio, Sql Server, HTML, CSS, Silverlight, Telerik, Unity, MVVM Light, LinqToSql",
@@ -195,6 +201,8 @@
         },
         {
             "title": "Développeuse Web – TravelDev – Aix en Provence",
+            "company": "TravelDev",
+            "place": "Aix en Provence",
             "from": "Janvier 2002",
             "to": "Mai 2007",
             "skills": "Visual Studio, InterDev, Asp, Asp.Net, VBScript, C#, Sql server, IIS 6.0, HTML, Javascript, Photoshop",

@@ -18,6 +18,13 @@ internal class ConfigurationLoader : IConfigurationLoader
 		var i = 0;
 		while (i < args.Length)
 		{
+			if (args[i] == ConfigurationFields.WorkingDirectory)
+			{
+				configuration.WorkingDirectory = args[i + 1];
+				i = i + 2;
+				continue;
+			}
+
 			if (args[i] == ConfigurationFields.Template)
 			{
 				configuration.Template = args[i + 1];
@@ -60,10 +67,18 @@ internal class ConfigurationLoader : IConfigurationLoader
 				continue;
 			}
 
+			if (args[i] == ConfigurationFields.ClearOutput)
+			{
+				configuration.ClearOutput = true;
+				i = i + 1;
+				continue;
+			}
+
 			this.logger.LogError($"ERROR [arg[{i}] - {args[i]}] not supported.");
 			return null;
 		}
 
+		configuration.Initialize();
 		return configuration;
 	}
 }

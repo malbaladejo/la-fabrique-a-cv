@@ -33,11 +33,7 @@ li {
 
 .right-panel {
     font-size: 18px;
-    padding: 10px;
-}
-
-.contacts {
-    margin-top: 180px;
+    padding: 200px 40px 10px 40px;
 }
 
 .skill {
@@ -57,7 +53,7 @@ li {
 }
 
 .progress-bar {
-    width: 220px;
+    width: 160px;
     height: 5px;
     margin-top: 5px;
 }
@@ -86,35 +82,31 @@ li {
     width: 100%;
 }
 
-.contact {
-    margin-bottom: 20px;
-}
-
-
 .body {
     padding: 10px;
+    margin-left: 10px;
 }
 
 .cv-header {
-    width: 966px;
-    height: 100px;
+    width: 930px;
+    height: 120px;
     display: grid;
     grid-template-columns: auto 1fr;
+    column-gap: 100px;
     border: 8px solid white;
     position: absolute;
     padding: 10px;
     top: 20px;
-    left: 20px;
+    left: 40px;
 }
 
 .cv-name {
     font-size: 36px;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-.cv-title {
-    font-size: 18px;
-    text-align: center;
+.contact {
+    margin-bottom: 5px;
 }
 
 .picture img {
@@ -133,13 +125,14 @@ li {
     margin: 20px 10px;
 }
 
-.experience-title {
+.experiences-title {
     padding: 5px;
+    display: inline;
 }
 
 .experience-grid {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 1fr 220px;
     row-gap: 30px;
     margin: 10px;
 }

@@ -15,23 +15,25 @@
             <img src="{{picture}}" />
         </div>
         <div>
-            <div class="cv-name">{{name}}</div>
-            <div class="cv-title">{{title}}</div>
+            <div class="cv-name">{{name}} - {{title}}</div>
+            <div class="contacts">
+                {{#each contacts}}
+                <div class="contact">
+                    {{#phone}}
+                    <i class="fas fa-phone"></i>
+                    {{/phone}}
+                    {{#email}}
+                    <i class="fas fa-envelope"></i>
+                    {{/email}}
+                    {{value}}
+                </div>
+                {{/each}}
+            </div>
         </div>
     </div>
 
     <div class="layout">
         <div class="right-panel background-dark invert-color">
-
-            <div class="contacts margin">
-                <div class="bold">Coordonnées :</div>
-                {{#each contacts}}
-                <div class="contact">
-                    <div class="bold">{{title}} :</div>
-                    {{value}}
-                </div>
-                {{/each}}
-            </div>
 
             <div class="skills margin">
                 <div class="bold">Compétences :</div>
@@ -57,24 +59,27 @@
 
         <div class="body">
             <div class="experiences">
-                <div class="experience-title background-light invert-color font-size-22">
+                <div class="experiences-title background-light invert-color font-size-22">
                     EXPÉRIENCES PROFESSIONNELLES
                 </div>
                 {{#each experiences}}
-                <div class="experience-grid">
-                    <div class="exprience-right minor-color">
-                        <p>
-                            {{from}}
-                        </p>
-                        <p>
-                            {{to}}
-                        </p>
-                        <p>
-                            {{skills}}
-                        </p>
+                <div>
+                    <div class="experience-grid">
+                        <div>
+                            <div class="bold font-size-22">{{title}}</div>
+                            <div>
+                                {{company}} - {{place}}
+                            </div>
+                            <div class="minor-color">
+                                {{skills}}
+                            </div>
+                        </div>
+                        <div class="exprience-right minor-color">
+                            de {{from}} à {{to}}
+                        </div>
                     </div>
+
                     <div>
-                        <div class="margin bold font-size-22">{{title}}</div>
 
                         <div>
                             <ul>
@@ -97,7 +102,7 @@
                 <hr>
                 {{/each}}
 
-                <div class="experience-title background-light invert-color font-size-22">
+                <div class="experiences-title background-light invert-color font-size-22">
                     FORMATIONS
                 </div>
                 {{#each studies}}
@@ -109,7 +114,7 @@
                 </div>
                 {{/each}}
 
-                <div class="experience-title background-light invert-color font-size-22">
+                <div class="experiences-title background-light invert-color font-size-22">
                     LANGUES
                 </div>
                 {{#each languages}}
@@ -120,7 +125,7 @@
                     <div>{{label}}</div>
                 </div>
                 {{/each}}
-                <div class="experience-title background-light invert-color font-size-22">
+                <div class="experiences-title background-light invert-color font-size-22">
                     LOISIRS
                 </div>
                 <div class="hobbies">{{hobbies}}</div>

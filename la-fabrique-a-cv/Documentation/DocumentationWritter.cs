@@ -18,5 +18,6 @@ internal class DocumentationWritter : IDocumentationWritter
 		this.logger.LogInformation($"{ConfigurationFields.Css}:\t\t [optional] [multiple] Path of css file to include in generated file.");
 		this.logger.LogInformation($"{ConfigurationFields.Asset}:\t\t [optional] [multiple] Path of other file to copy to output.");
 		this.logger.LogInformation($"{ConfigurationFields.Watch}:\t\t [optional] Watch for files update and auto render.");
+		this.logger.LogInformation($"{ConfigurationFields.ClearOutput}:\t\t [optional] Clear the output folder before generate.");
 	}
 }

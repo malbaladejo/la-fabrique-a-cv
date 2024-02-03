@@ -9,6 +9,7 @@
     <Title>La fabrique a CV</Title>
     <Authors>malbaladejo</Authors>
     <Copyright>2024</Copyright>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
