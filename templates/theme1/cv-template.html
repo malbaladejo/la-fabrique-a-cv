@@ -127,6 +127,46 @@
 
                 <hr>
                 {{/each}}
+				
+				 <div class="experiences">
+                <div class="experience-title background invert-color font-size-22">
+                    PROJETS PERSONNELS
+                </div>
+                {{#each projects}}
+                <div class="experience-grid">
+                    <div class="exprience-right minor-color">
+                        <p>
+                            {{date}}
+                        </p>
+                        <p>
+                            {{skills}}
+                        </p>
+                    </div>
+                    <div>
+                        <div class="margin bold font-size-22">
+                            {{title}}
+                        </div>
+
+                        <div>
+                            <ul>
+                                {{#each descriptions}}
+                                <li>{{title}}
+                                    {{#if labels}}
+                                    <ul>
+                                        {{#each labels}}
+                                        <li>{{.}}</li>
+                                        {{/each}}
+                                    </ul>
+                                    {{/if}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                {{/each}}
 
                 <div class="experience-title background invert-color font-size-22">
                     FORMATIONS

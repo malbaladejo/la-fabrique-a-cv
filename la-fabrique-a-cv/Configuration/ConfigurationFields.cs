@@ -10,4 +10,6 @@ internal static class ConfigurationFields
 	public static readonly string Asset = "-asset";
 	public static readonly string Watch = "-watch";
 	public static readonly string ClearOutput = "-clear";
+	public static readonly string New = "-new";
+	public static readonly string Config = "-config";
 }

@@ -84,13 +84,13 @@
                         "Utilisation des contrôles DevExpress et Telerik.",
                         "Consommation de services SOAP et REST.",
                         "Injection de dépendances avec Unity.",
-                        "Utilisation des Designs Pattern Factory et Strategy.",
+                        "Utilisation des Designs Pattern (Factory,Builder , Strategy, Adapter, Facade, Command).",
                         "Respect des principes SOLID, KISS, DRY.",
                         "Application personnalisable en fonction des besoins des partenaires.",
                         "Application sensible pour l’activité de la banque.",
                         "Code review systématique.",
                         "50% de couverture de test minimum exigé.",
-                        "Gestion des build en intégration continue sur Azure Devops."
+                        "Gestion des builds en intégration continue sur Azure Devops."
                     ]
                 },
                 {
@@ -104,10 +104,10 @@
                     "title": "Participation au processus de recrutement."
                 },
                 {
-                    "title": "Accompagnement des nouvelles recrues."
+                    "title": "Coaching technique."
                 },
                 {
-                    "title": "Migration d'un application AngularJs en Angular."
+                    "title": "Migration d'une application AngularJs en Angular."
                 },
                 {
                     "title": "Animation d'une communauté .Net :",
